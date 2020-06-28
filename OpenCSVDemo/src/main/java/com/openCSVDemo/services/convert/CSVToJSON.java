@@ -1,6 +1,7 @@
-package com.csvdemo;
+package com.openCSVDemo.services.convert;
 
 import com.google.gson.Gson;
+import com.openCSVDemo.models.CSVUser;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 
@@ -11,16 +12,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CSVToJSON {
-    private static final String CSV_PATH = "src/main/resources/user.csv";
-    private static final String JSON_PATH = "src/main/resources/user.json";
-
-    public static void main(String[] args) {
+    public CSVToJSON(String CSV_PATH, String JSON_PATH){
         try {
             Reader reader = Files.newBufferedReader(Paths.get(CSV_PATH));
-            CsvToBeanBuilder<CSVUser> csvUserCsvToBeanBuilder = new CsvToBeanBuilder<>(reader);
-            csvUserCsvToBeanBuilder.withType(CSVUser.class);
-            csvUserCsvToBeanBuilder.withIgnoreLeadingWhiteSpace(true);
-            CsvToBean<CSVUser> csvToBean = csvUserCsvToBeanBuilder.build();
+            CsvToBeanBuilder<CSVUser> csvToBeanBuilder = new CsvToBeanBuilder<>(reader);
+            csvToBeanBuilder.withType(CSVUser.class);
+            csvToBeanBuilder.withIgnoreLeadingWhiteSpace(true);
+            CsvToBean<CSVUser> csvToBean = csvToBeanBuilder.build();
             List<CSVUser> csvUsers = csvToBean.parse();
             Gson gson = new Gson();
             String json = gson.toJson(csvUsers);

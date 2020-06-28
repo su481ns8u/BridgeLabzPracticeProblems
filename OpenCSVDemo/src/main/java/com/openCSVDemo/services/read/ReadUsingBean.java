@@ -1,5 +1,6 @@
-package com.csvdemo;
+package com.openCSVDemo.services.read;
 
+import com.openCSVDemo.models.CSVUser;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 
@@ -9,26 +10,21 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Iterator;
 
-/**
- * This method is sutiable for larger csv files
- */
-public class ParseCSVIntoPOJO {
-    private static final String PATH = "src/main/resources/user.csv";
-
-    public static void main(String[] args) {
-        try {
-            Reader reader = Files.newBufferedReader(Paths.get(PATH));
+public class ReadUsingBean {
+    public ReadUsingBean(String PATH) {
+        try (
+                Reader reader = Files.newBufferedReader(Paths.get(PATH));
+        ) {
             CsvToBean<CSVUser> csvToBean = new CsvToBeanBuilder(reader)
                     .withType(CSVUser.class)
                     .withIgnoreLeadingWhiteSpace(true)
                     .build();
+
             Iterator<CSVUser> csvUserIterator = csvToBean.iterator();
+
             while (csvUserIterator.hasNext()) {
                 CSVUser csvUser = csvUserIterator.next();
-                System.out.println("Name: " + csvUser.getName());
-                System.out.println("Email: " + csvUser.getEmail());
-                System.out.println("Phone: " + csvUser.getPhoneNo());
-                System.out.println("Country: " + csvUser.getCountry() + "\n");
+                System.out.println(csvUser.print());
             }
         } catch (IOException e) {
             e.printStackTrace();

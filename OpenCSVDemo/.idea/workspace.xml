@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2e7a300-4f3d-4b3c-8251-9fbb9d5a4cee" name="Default Changelist" comment="" />
+    <list default="true" id="c2e7a300-4f3d-4b3c-8251-9fbb9d5a4cee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/OpenCSVDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/openCSVDemo/controller/OpenCSVDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/openCSVDemo/services/convert/CSVToJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/openCSVDemo/services/read/ReadAllAtOnce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/openCSVDemo/services/read/ReadOneAtATime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/openCSVDemo/services/read/ReadUsingBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/openCSVDemo/services/write/WriteToCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/writing/user.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DummyAnnotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DummyAnnotation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadAllAtOnce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadCSVintoArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csvdemo/CSVToJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csvdemo/CSVUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openCSVDemo/models/CSVUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csvdemo/ParseCSVIntoPOJO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csvdemo/ReadCSVIntoMemory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csvdemo/WriteToCsv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reading/user.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/user.csv" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +35,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,25 +46,42 @@
     </option>
   </component>
   <component name="ProjectId" id="1djZEo99CRUTmZKoDGd0XYxQOIv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/reading" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.CSVToJSON">
-    <configuration name="CSVToJSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.csvdemo.CSVToJSON" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\BootCamp\PracticeProblems\OpenCSVDemo\src\main\resources\reading" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.openCSVDemo.models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\BootCamp\PracticeProblems\OpenCSVDemo\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.OpenCSVDemo">
+    <configuration name="OpenCSVDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.openCSVDemo.controller.OpenCSVDemo" />
       <module name="OpenCSVDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.csvdemo.*" />
+          <option name="PATTERN" value="com.openCSVDemo.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -48,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParseCSVIntoPOJO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.csvdemo.ParseCSVIntoPOJO" />
+    <configuration name="OpenCSVReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.openCsvDemo1.OpenCSVReader" />
       <module name="OpenCSVDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.csvdemo.*" />
+          <option name="PATTERN" value="com.openCsvDemo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,9 +102,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadAllAtOnce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReadAllAtOnce" />
+    <configuration name="OpenCSVWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.openCsvDemo1.OpenCSVWriter" />
       <module name="OpenCSVDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openCsvDemo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CSVToJSON" />
+        <item itemvalue="Application.OpenCSVDemo" />
+        <item itemvalue="Application.OpenCSVWriter" />
+        <item itemvalue="Application.OpenCSVReader" />
         <item itemvalue="Application.WriteToCsv" />
         <item itemvalue="Application.ReadCSVIntoMemory" />
-        <item itemvalue="Application.ParseCSVIntoPOJO" />
-        <item itemvalue="Application.ReadAllAtOnce" />
       </list>
     </recent_temporary>
   </component>
@@ -117,23 +164,42 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="637" height="226" key="GridCell.Tab.0.bottom" timestamp="1592948549099">
+    <state x="369" y="47" key="#Project_Structure" timestamp="1593371550964">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="637" height="226" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592948549099" />
-    <state width="637" height="226" key="GridCell.Tab.0.center" timestamp="1592948549098">
+    <state x="369" y="47" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1593371550964" />
+    <state x="453" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1593377319168">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="637" height="226" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592948549098" />
-    <state width="637" height="226" key="GridCell.Tab.0.left" timestamp="1592948549098">
+    <state x="453" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1593377319168" />
+    <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1593377055124">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="637" height="226" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592948549098" />
-    <state width="637" height="226" key="GridCell.Tab.0.right" timestamp="1592948549098">
+    <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1593377055124" />
+    <state x="680" y="128" key="FileChooserDialogImpl" timestamp="1593376399547">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="637" height="226" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592948549098" />
+    <state x="680" y="128" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1593376399547" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1593379317280">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1593379317280" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1593379317280">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1593379317280" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1593379317280">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1593379317280" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1593379317280">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1593379317280" />
     <state width="637" height="226" key="GridCell.Tab.1.bottom" timestamp="1592948549099">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -154,6 +220,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="426" y="27" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1592946057423" />
+    <state x="721" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1593004951680">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="721" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1593004951680" />
+    <state x="680" y="169" key="run.anything.popup" timestamp="1593376575177">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="680" y="169" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1593376575177" />
     <state x="687" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1592947403737">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

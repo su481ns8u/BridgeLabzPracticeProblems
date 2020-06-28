@@ -1,5 +1,6 @@
-package com.csvdemo;
+package com.openCSVDemo.services.write;
 
+import com.openCSVDemo.models.CSVUser;
 import com.opencsv.CSVWriter;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
@@ -13,24 +14,22 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WriteToCsv {
-    private static final String PATH = "src/main/resources/user.csv";
-
-    public static void main(String[] args) throws IOException {
-        try {
-            Writer writer = Files.newBufferedWriter(Paths.get(PATH));
+public class WriteToCSV {
+    public WriteToCSV(String PATH) throws IOException,
+            CsvDataTypeMismatchException,
+            CsvRequiredFieldEmptyException {
+        try (
+                Writer writer = Files.newBufferedWriter(Paths.get(PATH));
+        ) {
             StatefulBeanToCsv<CSVUser> beanToCsv = new StatefulBeanToCsvBuilder(writer)
                     .withQuotechar(CSVWriter.NO_QUOTE_CHARACTER)
                     .build();
+
             List<CSVUser> myUsers = new ArrayList<>();
-            myUsers.add(new CSVUser("Sudhanshu Ghinmine","sghinmine54@gmail.com","+91-8551973494","India"));
-            myUsers.add(new CSVUser("Snehal Ghinmine","sghinmine311@gmail.com","+91-8007928757","India"));
-            System.out.println(myUsers);
+            myUsers.add(new CSVUser("Sudhanshu Ghinmin", "sghinmine54@gmail.com", "+91-8551973494", "India"));
+            myUsers.add(new CSVUser("Snehal Ghinmine", "snehal.ghinmine@outlook.com", "+91-9822917991", "India"));
+
             beanToCsv.write(myUsers);
-        } catch (CsvRequiredFieldEmptyException e) {
-            e.printStackTrace();
-        } catch (CsvDataTypeMismatchException e) {
-            e.printStackTrace();
         }
     }
 }
